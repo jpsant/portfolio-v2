@@ -1,6 +1,6 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
-import { appWithTranslation } from '~src/i18n';
+import '../i18n';
 import Head from 'next/head';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
@@ -15,4 +15,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default appWithTranslation(MyApp);
+export default MyApp;

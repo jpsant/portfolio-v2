@@ -1,15 +1,19 @@
-import { withTranslation } from '~src/i18n';
+import { useTranslation } from 'react-i18next';
 
-type Props = {
-  t: CallableFunction;
-};
+const App = () => {
+  const { t, i18n } = useTranslation('Home');
 
-const App = ({ t }: Props) => {
+  const handleClick = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div>
+      <button onClick={() => handleClick('pt-BR')}>portuguese</button>
+      <button onClick={() => handleClick('en-US')}>english</button>
       <h1>{t('HomeTitle')}</h1>
     </div>
   );
 };
 
-export default withTranslation('Home')(App);
+export default App;
