@@ -1,13 +1,14 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
 import '../i18n';
+import '../foundations/global.scss';
 import Head from 'next/head';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <React.Fragment>
       <Head>
-        <title>Ômega</title>
+        <title>JP Santana</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <Component {...pageProps} />

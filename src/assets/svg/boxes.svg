@@ -1,0 +1,27 @@
+<svg width="427" height="575" viewBox="0 0 427 575" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<g>
+<animateTransform type="translate" fill="remove" restart="always" additive="replace" accumulate="none" begin=".1" keySplines="0.43 0.01 0.63 1; 0.43 0.01 0.63 1" calcMode="spline" values="0,20;0,-20;0,20" repeatCount="indefinite" dur="5s" attributeName="transform" attributeType="XML"/>
+<path d="M92.3871 305.76L50.2871 255.867H238.895L217.845 337.962L145.854 417.11L92.3871 305.76Z" fill="#0B2B4C"/>
+<path d="M143.197 308.492L145.398 419.871L239.737 364.752V255.574L143.197 308.492Z" fill="#0C3661"/>
+<path d="M50 364.752V255.574L145.398 310.693V419.871L50 364.752Z" fill="#0B2B4C"/>
+<path d="M145.398 200.455L50 255.574L145.398 310.693L239.737 255.574L145.398 200.455Z" fill="#163F69"/>
+</g>
+
+<g>
+<animateTransform type="translate" fill="remove" restart="always" additive="replace" accumulate="none" begin=".3" keySplines="0.43 0.01 0.63 1; 0.43 0.01 0.63 1" calcMode="spline" values="0,20;0,-20;0,20" repeatCount="indefinite" dur="5s" attributeName="transform" attributeType="XML"/>
+<path d="M300.778 529.205L226.682 402.484H374.453L372.769 479.948L300.778 529.205Z" fill="#0B2B4C"/>
+<path d="M300.427 358.7L225.838 401.796L300.427 444.892L374.187 401.796L300.427 358.7Z" fill="#163F69"/>
+<path d="M300.427 444.892V530.254L374.187 487.159V401.796L300.427 444.892Z" fill="#0C3661"/>
+<path d="M225.838 487.159V401.796L300.427 444.892V530.254L225.838 487.159Z" fill="#0B2B4C"/>
+</g>
+
+<g>
+<animateTransform type="translate" fill="remove" restart="always" additive="replace" accumulate="none" begin=".5" keySplines="0.43 0.01 0.63 1; 0.43 0.01 0.63 1" calcMode="spline" values="0,20;0,-20;0,20" repeatCount="indefinite" dur="5s" attributeName="transform" attributeType="XML"/>
+<path d="M287.94 251.974L198.267 96.2036H375.508L365.404 183.772L287.94 251.974Z" fill="#0B2B4C"/>
+<path d="M287.809 44L197.424 96.2228L287.809 148.446L377.191 96.2228L287.809 44Z" fill="#163F69"/>
+<path d="M287.808 148.445V251.886L377.189 199.664V96.2222L287.808 148.445Z" fill="#0C3661"/>
+<path d="M197.423 199.664V96.2222L287.809 148.445V251.886L197.423 199.664Z" fill="#0B2B4C"/>
+</g>
+
+</svg>

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Proza Libre';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Proza Libre'), local('ProzaLibre-Regular'), url('/proza-libre-v5-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Proza Libre';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Proza Libre Medium'), local('ProzaLibre-Medium'), url('/proza-libre-v5-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Proza Libre';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('Proza Libre SemiBold'),
+    local('ProzaLibre-SemiBold'),
+    url('/proza-libre-v5-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Proza Libre';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Proza Libre Bold'), local('ProzaLibre-Bold'), url('/proza-libre-v5-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('/open-sans-v18-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/open-sans-v18-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('/open-sans-v18-latin-600.woff2') format('woff2');
+}
+
+html,
+body {
+  min-height: 100vh;
+  // background-color: #f6f5fa;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Roboto', 'Rubik', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+button:focus {
+  outline: none;
+}
