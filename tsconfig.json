@@ -4,7 +4,13 @@
     "paths": {
       "~src/*": ["./src/*"],
       "~components/*": ["./src/components/*"],
-      "~assets/*": ["./src/assets/*"]
+      "~assets/*": ["./src/assets/*"],
+      "~animations/*": ["./src/assets/animations/*"],
+      "~atoms/*": ["./src/components/atoms/*"],
+      "~molecules/*": ["./src/components/molecules/*"],
+      "~organisms/*": ["./src/components/organisms/*"],
+      "~templates/*": ["./src/components/templates/*"],
+      "~pages/*": ["./src/pages/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
