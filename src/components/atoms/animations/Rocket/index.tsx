@@ -5,8 +5,8 @@ import './styles.scss';
 
 const RocketAnimation = () => {
   return (
-    <div className="rocketContainer">
-      <Lottie animationData={rocket} />
+    <div className="rocketContainer" role="animation">
+      <Lottie aria-labelledby="Rocket lottie animation" animationData={rocket} />
     </div>
   );
 };
