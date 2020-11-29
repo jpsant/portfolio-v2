@@ -2,6 +2,7 @@
 
 .soonTemplate {
   display: flex;
+  overflow-x: hidden !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
