@@ -1,5 +1,7 @@
+@import './colors.scss';
+
 @font-face {
-  font-family: 'Proza Libre';
+  font-family: 'Proza Libre', sans-serif;
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -57,12 +59,11 @@
 html,
 body {
   min-height: 100vh;
-  // background-color: #f6f5fa;
   background-color: #fff;
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'Roboto', 'Rubik', sans-serif;
+  // font-family: 'Roboto', 'Rubik', sans-serif;
   overflow-x: hidden;
 }
 
