@@ -11,10 +11,53 @@
 
   &-moon {
     position: absolute;
-    top: 3em;
+    top: 2em;
+    width: 8em;
+    left: 2em;
 
-    @include respond-to('desktop-md') {
-      width: 77em;
+    @include respond-to('tablet') {
+      width: 6em;
+      left: 1em;
+      top: 1em;
+    }
+  }
+
+  &-stars1 {
+    position: absolute;
+    width: 12em;
+    top: 3em;
+    right: 1em;
+
+    @include respond-to('tablet') {
+      width: 6em;
+      top: 1em;
+    }
+  }
+
+  &-stars2 {
+    position: absolute;
+    width: 8em;
+    top: 5em;
+    left: 5em;
+    z-index: 1;
+
+    @include respond-to('tablet') {
+      width: 6em;
+      top: 3em;
+      left: 3em;
+    }
+  }
+
+  &-stars3 {
+    position: absolute;
+    width: 8em;
+    bottom: 3em;
+    left: 6em;
+    z-index: 1;
+
+    @include respond-to('tablet') {
+      width: 6em;
+      left: 3em;
       bottom: 0;
     }
   }
@@ -29,12 +72,23 @@
       left: -5.5em;
       bottom: 0;
     }
+
+    @include respond-to('tablet') {
+      width: 10em;
+      bottom: 0;
+    }
   }
 
   &-planet2 {
     position: absolute;
     bottom: 1em;
     right: -2em;
+
+    @include respond-to('tablet') {
+      width: 10em;
+      bottom: 2em;
+      right: -6em;
+    }
   }
 
   &__container {
@@ -48,11 +102,20 @@
       margin-bottom: 16px;
     }
 
+    @include respond-to('tablet') {
+      text-align: center;
+    }
+
     &-h1 {
       font-family: var(--heading), sans-serif;
       font-size: var(--font-size-4);
       margin: 0;
       font-weight: 600;
+      z-index: 999;
+
+      @include respond-to('tablet') {
+        font-size: var(--font-size-2);
+      }
     }
 
     &-h3 {
@@ -61,6 +124,12 @@
       margin: 0.5em 0;
       margin-top: 0;
       font-weight: 500;
+      z-index: 999;
+
+      @include respond-to('tablet') {
+        font-size: var(--font-size-1);
+        margin: 0.8em 0;
+      }
     }
 
     &-h4 {
@@ -68,6 +137,7 @@
       font-size: var(--font-size-1);
       margin: 0;
       font-weight: 500;
+      z-index: 999;
     }
   }
 }
