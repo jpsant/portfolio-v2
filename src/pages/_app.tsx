@@ -2,6 +2,7 @@ import React from 'react';
 import type { AppProps } from 'next/app';
 import '../i18n';
 import '../foundations/global.scss';
+import '../foundations/fonts.scss';
 import Head from 'next/head';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
