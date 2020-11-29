@@ -6,4 +6,8 @@
   @include respond-to('desktop-md') {
     width: 40em;
   }
+
+  @include respond-to('tablet') {
+    width: 30em;
+  }
 }
