@@ -57,6 +57,7 @@
     "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
+    "jest-canvas-mock": "^2.3.0",
     "lint-staged": "^10.4.0",
     "next-compose-plugins": "^2.2.0",
     "next-i18next": "^6.0.2",
