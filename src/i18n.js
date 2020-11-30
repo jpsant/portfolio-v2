@@ -14,14 +14,16 @@ i18n
     fallbackLng: 'pt-BR',
     debug: false,
     supportedLngs: languages,
+    preload: ['pt-BR', 'en-US'],
+    ns: ['pt-BR', 'en-US'],
 
     interpolation: {
       escapeValue: false
     },
 
     react: {
-      wait: true,
-      useSuspense: false
+      useSuspense: false,
+      wait: true
     }
   });
 
