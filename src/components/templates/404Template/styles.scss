@@ -20,8 +20,8 @@
 
   &-moon {
     position: absolute;
-    top: 3em;
-    left: 3em;
+    top: 1em;
+    left: 1em;
     width: 12em;
 
     @include respond-to('tablet') {
@@ -35,6 +35,7 @@
     position: absolute;
     bottom: 0;
     right: -8em;
+    width: 22em;
 
     @include respond-to('tablet') {
       width: 10em;
