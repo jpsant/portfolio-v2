@@ -1,0 +1,15 @@
+.contactTemplate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+
+  &-divider {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+  }
+}

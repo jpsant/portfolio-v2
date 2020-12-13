@@ -1,0 +1,9 @@
+.skillsTemplate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--black);
+}
