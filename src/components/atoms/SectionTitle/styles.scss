@@ -7,7 +7,7 @@
   &-h1 {
     font-family: var(--heading);
     font-size: var(--font-size-3);
-    margin-right: 3em;
+    margin-right: 32px;
   }
 }
 
@@ -16,5 +16,5 @@
 }
 
 .dark {
-  color: var(--dark);
+  color: var(--black);
 }
