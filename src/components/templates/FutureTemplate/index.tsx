@@ -1,12 +1,19 @@
 import { Container } from '@material-ui/core';
+import SectionTitle from '~atoms/SectionTitle';
+
+import FutureSectionImage from '~assets/svg/futureSectionImg.svg';
+
 import './styles.scss';
 
 const FutureTemplate = () => {
   return (
     <section className="futureTemplate">
-      <Container maxWidth="lg">
-        <h1>Future template</h1>
-      </Container>
+      <div className="futureTemplate__title">
+        <Container maxWidth="lg">
+          <SectionTitle title="Futuro" img={FutureSectionImage} theme="dark" />
+        </Container>
+      </div>
+      <div className="futureTemplate__content">{/* <Container maxWidth="lg"></Container> */}</div>
     </section>
   );
 };

@@ -6,4 +6,8 @@
   min-height: 100vh;
   background-color: var(--white);
   color: var(--black);
+
+  &__title {
+    z-index: 2;
+  }
 }

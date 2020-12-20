@@ -11,6 +11,11 @@
     width: 100vw;
     position: absolute;
     top: 0;
+    z-index: 1;
+  }
+
+  &__title {
+    z-index: 2;
   }
 }
 
@@ -27,5 +32,10 @@
     width: 100vw;
     position: absolute;
     top: 0;
+    z-index: 1;
+  }
+
+  &__title {
+    z-index: 2;
   }
 }

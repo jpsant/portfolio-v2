@@ -12,4 +12,8 @@
     position: absolute;
     top: 0;
   }
+
+  &__title {
+    z-index: 2;
+  }
 }
