@@ -10,6 +10,8 @@
       "~molecules/*": ["./src/components/molecules/*"],
       "~organisms/*": ["./src/components/organisms/*"],
       "~templates/*": ["./src/components/templates/*"],
+      "~sections/*": ["./src/components/templates/sections/*"],
+      "~dividers/*": ["./src/components/atoms/dividers/*"],
       "~pages/*": ["./src/pages/*"]
     },
     "target": "es5",
