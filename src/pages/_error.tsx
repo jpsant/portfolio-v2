@@ -1,7 +1,5 @@
-import ErrorTemplate from '~templates/404Template';
-
 const ErrorPage = () => {
-  return <ErrorTemplate />;
+  return <div>Error!</div>;
 };
 
 export default ErrorPage;
