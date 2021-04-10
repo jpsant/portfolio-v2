@@ -14,7 +14,6 @@ const SoonTemplate = () => {
 
   return (
     <section className={styles.soonTemplate}>
-      {console.log(ready)}
       <SwitchTransition>
         <CSSTransition key={ready ? 0 : 1} timeout={1100} classNames="translate">
           <Container maxWidth="lg">
