@@ -1,0 +1,135 @@
+@import "../../../foundations/mixins.scss";
+
+.soonTemplate {
+  display: flex;
+  overflow-x: hidden !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--white);
+  background-color: var(--black);
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    @include respond-to("tablet") {
+      flex-direction: column;
+    }
+
+    &__texts {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      @include respond-to("tablet") {
+        align-items: center;
+      }
+
+      @include respond-to("mobile") {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 56px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        margin: 0;
+
+        @include respond-to("mobile") {
+          font-size: 30px;
+        }
+      }
+
+      h2 {
+        font-size: 24px;
+        font-family: "Overpass", sans-serif;
+        font-weight: 400;
+        margin: 18px 0;
+
+        @include respond-to("mobile") {
+          font-size: 16px;
+          font-weight: 400;
+          margin: 8px 0;
+        }
+      }
+
+      &_phone {
+        display: none;
+        animation: mymove 5s ease-in-out infinite;
+
+        @include respond-to("tablet") {
+          display: inline;
+          margin: 16px 0;
+        }
+
+        @include respond-to("mobile") {
+          margin: 24px 0;
+          margin-top: 16px;
+        }
+      }
+
+      span {
+        width: 288px;
+        height: 49px;
+        border-radius: 4px;
+        background-color: var(--effect);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include respond-to("mobile") {
+          font-size: 16px;
+          width: 220px;
+          height: 39px;
+        }
+
+        h4 {
+          font-family: "Inter", sans-serif;
+          font-size: 24px;
+          font-weight: 600;
+          color: var(--white);
+
+          @include respond-to("mobile") {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &__images {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &_browser {
+        display: auto;
+        animation: mymove 5s ease-in-out infinite;
+
+        @include respond-to("tablet") {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}

@@ -1,19 +1,9 @@
-import HomeSection from '~sections/Home';
-import AboutSection from '~sections/About';
-import SoftSkillsSection from '~sections/SoftSkills';
-import HardSkillsSection from '~sections/HardSkills';
-import ProjectsSection from '~sections/Projects';
-import ContactSection from '~sections/Contact';
+import SoonTemplate from '~templates/SoonTemplate';
 
 const App = () => {
   return (
     <>
-      <HomeSection />
-      <AboutSection />
-      <SoftSkillsSection />
-      <HardSkillsSection />
-      <ProjectsSection />
-      <ContactSection />
+      <SoonTemplate />
     </>
   );
 };

@@ -1,0 +1,39 @@
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.translate-enter {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.translate-enter-active {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateY(0);
+}
+
+.translate-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.translate-exit-active {
+  opacity: 0;
+  transform: transform(50px);
+  transition: all 1s ease;
+}

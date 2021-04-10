@@ -1,25 +1,50 @@
 @import './colors.scss';
 @import './fonts.scss';
+@import './animations.scss';
 
 @font-face {
-  font-family: 'Heebo';
+  font-family: 'Overpass';
   font-style: normal;
-  font-weight: 500;
-  src: local(''), url('/fonts/heebo-v9-latin-500.woff2') format('woff2');
+  font-weight: 300;
+  src:
+    local(''),
+    url('/fonts/overpass-v5-latin-300.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Heebo';
+  font-family: 'Overpass';
   font-style: normal;
   font-weight: 400;
-  src: local(''), url('/fonts/heebo-v9-latin-regular.woff2') format('woff2');
+  src:
+    local(''),
+    url('/fonts/overpass-v5-latin-regular.woff2') format('woff2'),;
 }
 
 @font-face {
-  font-family: 'Heebo';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 800;
-  src: local(''), url('/fonts/heebo-v9-latin-800.woff2') format('woff2');
+  font-weight: 400;
+  src:
+    local(''),
+    url('/fonts/inter-v3-latin-regular.woff2') format('woff2'),;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local(''),
+    url('/fonts/inter-v3-latin-300.woff2') format('woff2'),;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local(''),
+    url('/fonts/inter-v3-latin-500.woff2') format('woff2');
 }
 
 html,
