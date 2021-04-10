@@ -8,7 +8,8 @@
   "settings": {
     "react": {
       "version": "detect"
-    }
+    },
+    "import/ignore": [".module.scss$","node_modules/*"]
   },
   "extends": [
     "eslint:recommended",
@@ -25,6 +26,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
+  "ignorePatterns": ["**/scene.js"],
   "plugins": ["react", "react-hooks", "@typescript-eslint", "css-modules"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
