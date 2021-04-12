@@ -12,6 +12,7 @@
       "~templates/*": ["./src/components/templates/*"],
       "~sections/*": ["./src/components/templates/sections/*"],
       "~dividers/*": ["./src/components/atoms/dividers/*"],
+      "~contexts/*": ["./src/contexts/*"],
       "~pages/*": ["./src/pages/*"]
     },
     "target": "es5",

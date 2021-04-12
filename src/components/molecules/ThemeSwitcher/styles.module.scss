@@ -1,0 +1,10 @@
+.themeSwitcher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--effect);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
