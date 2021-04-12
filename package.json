@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.11.2",
     "firebase-admin": "^9.4.1",
     "firebase-functions": "^3.11.0",
     "hamburger-react": "^2.4.0",
