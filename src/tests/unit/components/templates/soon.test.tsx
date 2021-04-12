@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { config } from 'react-transition-group';
+
+import ContextProvider from '~contexts/contextUtils/providers';
 import SoonTemplate from '~src/components/templates/SoonTemplate';
 
 describe('<SoonTemplate /> unit tests', () => {
@@ -9,7 +11,11 @@ describe('<SoonTemplate /> unit tests', () => {
 
   it('Should render the SoonTemplate component', async () => {
     //Arrange
-    render(<SoonTemplate />);
+    render(
+      <ContextProvider>
+        <SoonTemplate />
+      </ContextProvider>
+    );
     //Assert
     expect(screen.getAllByRole('img')).toHaveLength(2);
     expect(screen.getAllByRole('heading')).toHaveLength(3);

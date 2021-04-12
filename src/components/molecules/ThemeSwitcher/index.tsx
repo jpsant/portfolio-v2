@@ -33,7 +33,7 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div className={styles.themeSwitcher}>
+    <div className={styles.themeSwitcher} role={`switcher-${theme}-theme`}>
       <NightsStayOutlinedIcon fontSize="default" />
       <Switch
         disableRipple
