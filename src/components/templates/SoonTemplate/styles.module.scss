@@ -7,38 +7,16 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  color: var(--white);
+  background-color: var(--black);
 
   &__container {
-    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
 
     @include respond-to("tablet") {
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &__themeSwitcher {
-      position: absolute;
-      top: 5%;
-      left: 0;
-
-      @include respond-to("tablet") {
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      @include respond-to("mobile") {
-        position: absolute;
-        top: 87%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
     }
 
     &__texts {
@@ -103,7 +81,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: background 500ms ease-in-out;
 
         @include respond-to("mobile") {
           font-size: 16px;
@@ -115,7 +92,7 @@
           font-family: "Inter", sans-serif;
           font-size: 24px;
           font-weight: 600;
-          color: #fff;
+          color: var(--white);
 
           @include respond-to("mobile") {
             font-size: 16px;

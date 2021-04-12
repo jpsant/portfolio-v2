@@ -1,22 +1,7 @@
 :root {
+  --black: #303853;
   --white: #fff;
-  --black: #1f294a;
-  --dark-main: #303853;
-  --dark-effect: #ff6e30;
-  --light-main: #e3edf2;
-  --light-effect: #4e7d96;
+  --effect: #ff6e30;
   --gray: #dad9e8;
   --dark-gray: #363c43;
-}
-
-.dark {
-  --bg: var(--dark-main);
-  --effect: var(--dark-effect);
-  --text: var(--white);
-}
-
-.light {
-  --bg: var(--light-main);
-  --effect: var(--light-effect);
-  --text: var(--black);
 }
