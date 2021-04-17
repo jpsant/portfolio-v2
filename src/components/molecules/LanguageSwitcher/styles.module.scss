@@ -1,0 +1,55 @@
+.languageSwitcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: var(--languageSwitcher);
+  transition: background 300ms ease-in-out;
+  border-radius: 10px;
+  box-shadow:
+    0 3px 6px rgba(#000, 0.16),
+    0 3px 6px rgba(#000, 0.23);
+
+  &__languageButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  &__languageButton_selected {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  &__languageContainer {
+    transform: scale(0.8);
+    top: 110%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    background: var(--languageSwitcher);
+    border-radius: 10px;
+    box-shadow:
+      0 3px 6px rgba(#000, 0.16),
+      0 3px 6px rgba(#000, 0.23);
+  }
+}
+
+.languageSwitcher:hover {
+  .languageSwitcher__languageContainer {
+    visibility: visible;
+    opacity: 1;
+  }
+}
