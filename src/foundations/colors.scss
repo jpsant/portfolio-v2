@@ -3,8 +3,10 @@
   --black: #1f294a;
   --dark-main: #303853;
   --dark-effect: #ff6e30;
+  --dark-languageSwitcher: #4f597d;
   --light-main: #e3edf2;
   --light-effect: #4e7d96;
+  --light-languageSwitcher: #b9d3dc;
   --gray: #dad9e8;
   --dark-gray: #363c43;
 }
@@ -13,10 +15,12 @@
   --bg: var(--dark-main);
   --effect: var(--dark-effect);
   --text: var(--white);
+  --languageSwitcher: var(--dark-languageSwitcher);
 }
 
 .light {
   --bg: var(--light-main);
   --effect: var(--light-effect);
   --text: var(--black);
+  --languageSwitcher: var(--light-languageSwitcher);
 }
