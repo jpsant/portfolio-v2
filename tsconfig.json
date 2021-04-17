@@ -30,6 +30,6 @@
     "jsx": "preserve",
     "noImplicitAny": false,
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "custom.d.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "custom.d.ts", "src/tests/__mocks__/react-i18next.js"],
   "exclude": ["node_modules", "build"]
 }

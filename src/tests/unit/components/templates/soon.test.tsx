@@ -17,7 +17,7 @@ describe('<SoonTemplate /> unit tests', () => {
       </ContextProvider>
     );
     //Assert
-    expect(screen.getAllByRole('img')).toHaveLength(2);
+    expect(screen.getAllByRole('img')).toHaveLength(4);
     expect(screen.getAllByRole('heading')).toHaveLength(3);
     expect(screen.getByText('UserName')).toBeInTheDocument();
     expect(screen.getByText('UserName')).toBeInTheDocument();

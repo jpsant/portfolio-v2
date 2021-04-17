@@ -8,6 +8,7 @@ import Container from '@material-ui/core/Container';
 import { ThemeContext } from '~contexts/themeContext';
 import LoadingSpinner from '~atoms/LoadingSpinner';
 import ThemeSwitcher from '~molecules/ThemeSwitcher';
+import LanguageSwitcher from '~molecules/LanguageSwitcher';
 import darkBrowser from '~assets/3D-assets/dark-3d-browser.png';
 import darkPhone from '~assets/3D-assets/dark-3d-phone.png';
 import lightBrowser from '~assets/3D-assets/light-3d-browser.png';
@@ -27,6 +28,9 @@ const SoonTemplate = () => {
               <div className={styles.soonTemplate__container}>
                 <div className={styles.soonTemplate__container__themeSwitcher}>
                   <ThemeSwitcher />
+                </div>
+                <div className={styles.soonTemplate__container__languageSwitcher}>
+                  <LanguageSwitcher />
                 </div>
                 <div className={styles.soonTemplate__container__texts}>
                   <h1>{t('UserName')}</h1>
