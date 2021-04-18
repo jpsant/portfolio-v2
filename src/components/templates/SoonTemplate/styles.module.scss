@@ -94,7 +94,7 @@
 
       &_phone {
         display: none;
-        animation: mymove 5s ease-in-out infinite;
+        animation: translate 5s ease-in-out infinite;
 
         @include respond-to("tablet") {
           display: inline;
@@ -145,7 +145,7 @@
 
       &_browser {
         display: auto;
-        animation: mymove 5s ease-in-out infinite;
+        animation: translate 5s ease-in-out infinite;
 
         @include respond-to("tablet") {
           display: none;
@@ -155,7 +155,7 @@
   }
 }
 
-@keyframes mymove {
+@keyframes translate {
   0% {
     transform: translateY(20px);
   }
