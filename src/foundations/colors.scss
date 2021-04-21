@@ -2,9 +2,11 @@
   --white: #fff;
   --black: #1f294a;
   --dark-main: #303853;
+  --dark-main-variation: #3b4462;
   --dark-effect: #ff6e30;
   --dark-languageSwitcher: #4f597d;
   --light-main: #e3edf2;
+  --light-main-variation: #507e96;
   --light-effect: #4e7d96;
   --light-languageSwitcher: #b9d3dc;
   --gray: #dad9e8;
@@ -13,6 +15,7 @@
 
 .dark {
   --bg: var(--dark-main);
+  --bg-variation: var(--dark-main-variation);
   --effect: var(--dark-effect);
   --text: var(--white);
   --languageSwitcher: var(--dark-languageSwitcher);
@@ -20,6 +23,7 @@
 
 .light {
   --bg: var(--light-main);
+  --bg-variation: var(--light-main-variation);
   --effect: var(--light-effect);
   --text: var(--black);
   --languageSwitcher: var(--light-languageSwitcher);
