@@ -14,12 +14,12 @@ const App = () => {
   return (
     <body className={theme}>
       <SwitchTransition>
-        <CSSTransition key={ready ? 0 : 1} timeout={100} classNames="fade">
+        <CSSTransition key={ready ? 0 : 1} timeout={1100} classNames="translate">
           {ready ? (
-            <>
+            <section>
               <MobileMenu />
               <HomeTemplate />
-            </>
+            </section>
           ) : (
             <LoadingSpinner loading={ready} />
           )}
