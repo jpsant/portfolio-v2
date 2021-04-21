@@ -1,3 +1,5 @@
+@import "../../../foundations/mixins.scss";
+
 .languageSwitcher {
   position: relative;
   display: flex;
@@ -5,11 +7,16 @@
   justify-content: center;
   padding: 10px;
   background: var(--languageSwitcher);
-  transition: background 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   border-radius: 10px;
   box-shadow:
     0 3px 6px rgba(#000, 0.16),
     0 3px 6px rgba(#000, 0.23);
+
+  @include respond-to("mobile") {
+    padding: 6px;
+    border-radius: 10px;
+  }
 
   &__languageButton {
     background: none;
@@ -18,6 +25,10 @@
 
     img {
       width: 50px;
+
+      @include respond-to("mobile") {
+        width: 40px;
+      }
     }
   }
 
@@ -28,6 +39,10 @@
 
     img {
       width: 50px;
+
+      @include respond-to("mobile") {
+        width: 38px;
+      }
     }
   }
 

@@ -1,3 +1,5 @@
+@import "../../../foundations/mixins.scss";
+
 .themeSwitcher {
   display: flex;
   flex-direction: row;
@@ -10,4 +12,8 @@
   box-shadow:
     0 3px 6px rgba(#000, 0.16),
     0 3px 6px rgba(#000, 0.23);
+
+  @include respond-to("mobile") {
+    padding: 3px 11px;
+  }
 }
