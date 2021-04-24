@@ -1,6 +1,7 @@
 @import './colors.scss';
 @import './fonts.scss';
 @import './animations.scss';
+@import './mixins.scss';
 
 @font-face {
   font-family: 'Overpass';
@@ -49,7 +50,6 @@
 
 html,
 body {
-  min-height: 100vh;
   background-color: var(--bg);
   color: var(--text);
   margin: 0;
@@ -70,4 +70,45 @@ img {
 
 button:focus {
   outline: none;
+}
+
+/* CAROUSEL STYLING! */
+
+.Carousel-indicators-12 {
+  margin-top: 16px !important;
+}
+
+.Carousel-active-15 {
+  color: var(--effect) !important;
+  transform: scale(1.5);
+}
+
+.Carousel-indicator-13 {
+  padding: 0 2px !important;
+
+  @include respond-to('mobile') {
+    padding: 0 4px !important;
+  }
+}
+
+.Carousel-button-20 {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 16px 20px !important;
+}
+
+.Carousel-next-21 {
+  bottom: 0 !important;
+  top: 'unset' !important;
+}
+
+.Carousel-root-11 {
+  @include respond-to('mobile') {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+    min-height: 300px;
+  }
 }
