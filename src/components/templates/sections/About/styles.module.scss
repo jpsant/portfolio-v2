@@ -1,4 +1,99 @@
+@import "../../../../foundations/mixins.scss";
+
 .aboutSection {
   height: 100vh;
-  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @include respond-to('mobile') {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__carousel {
+      display: flex;
+      flex-direction: column;
+
+      @include respond-to('mobile') {
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        display: none;
+        width: 80%;
+        font-size: var(--font-size-1);
+        font-family: var(--heading), sans-serif;
+        font-weight: 500;
+        margin: 0;
+
+        @include respond-to('mobile') {
+          width: 95%;
+          font-size: var(--font-size-2);
+          text-align: center;
+          display: none;
+          display: block;
+        }
+      }
+
+      &_image {
+        width: 450px;
+        padding: 0 32px;
+
+        @include respond-to('mobile') {
+          width: 250px;
+          padding: 32px;
+        }
+      }
+    }
+
+    &__texts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+
+      @include respond-to('mobile') {
+        align-items: center;
+      }
+
+      h1 {
+        width: 80%;
+        font-size: var(--font-size-1);
+        font-family: var(--heading), sans-serif;
+        font-weight: 500;
+        margin: 0;
+
+        @include respond-to('mobile') {
+          font-size: var(--font-size-2);
+          text-align: center;
+          display: none;
+        }
+      }
+
+      h2 {
+        font-size: var(--font-size-4);
+        width: 80%;
+        font-family: var(--body), sans-serif;
+        font-weight: 300;
+        margin: 48px 0;
+
+        @include respond-to('mobile') {
+          width: 95%;
+          font-size: 16px;
+          font-weight: 400;
+          margin: 8px 0;
+          text-align: left;
+        }
+      }
+    }
+  }
 }

@@ -5,7 +5,8 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import MobileMenu from '~organisms/MobileMenu';
 import LoadingSpinner from '~atoms/LoadingSpinner';
 import { ThemeContext } from '~contexts/themeContext';
-import HomeTemplate from '~templates/sections/Home';
+import HomeSection from '~templates/sections/Home';
+import AboutSection from '~templates/sections/About';
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -18,7 +19,8 @@ const App = () => {
           {ready ? (
             <section>
               <MobileMenu />
-              <HomeTemplate />
+              <HomeSection />
+              <AboutSection />
             </section>
           ) : (
             <LoadingSpinner loading={ready} />
