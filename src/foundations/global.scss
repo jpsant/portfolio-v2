@@ -103,6 +103,8 @@ button:focus {
 }
 
 .Carousel-root-11 {
+  min-height: 300px;
+
   @include respond-to('mobile') {
     width: 100%;
     display: flex;
