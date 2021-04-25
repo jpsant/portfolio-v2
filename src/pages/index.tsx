@@ -7,6 +7,7 @@ import LoadingSpinner from '~atoms/LoadingSpinner';
 import { ThemeContext } from '~contexts/themeContext';
 import HomeSection from '~templates/sections/Home';
 import AboutSection from '~templates/sections/About';
+import SoftSkillsSection from '~templates/sections/SoftSkills';
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -21,6 +22,7 @@ const App = () => {
               <MobileMenu />
               <HomeSection />
               <AboutSection />
+              <SoftSkillsSection />
             </section>
           ) : (
             <LoadingSpinner loading={ready} />
