@@ -48,15 +48,14 @@
     url('/fonts/inter-v3-latin-500.woff2') format('woff2');
 }
 
-html,
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
-  margin: 0;
-  padding: 0;
-  width: 100%;
   font-family: 'Heebo', 'Rubik', sans-serif;
-  overflow-x: hidden;
   transition: background 300ms ease-in-out, color 700ms ease-in-out;
 }
 
@@ -100,6 +99,18 @@ button:focus {
 .Carousel-next-21 {
   bottom: 0 !important;
   top: 'unset' !important;
+
+  @include respond-to('tablet') {
+    right: -30px !important;
+  }
+}
+
+.Carousel-prev-22 {
+  left: 0;
+
+  @include respond-to('tablet') {
+    left: -30px !important;
+  }
 }
 
 .Carousel-root-11 {

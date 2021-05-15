@@ -35,13 +35,7 @@ const SoftSkillsSection = () => {
           </div>
           <div className={styles.softSkillsSection__container__cards}>
             {skills.map((skill) => (
-              <SoftSkillsCards
-                key={skill.alt}
-                title={skill.title}
-                description={skill.description}
-                image={skill.image}
-                alt={skill.alt}
-              />
+              <SoftSkillsCards key={skill.alt} {...skill} />
             ))}
           </div>
           <div className={styles.softSkillsSection__container__carousel}>
@@ -50,6 +44,7 @@ const SoftSkillsSection = () => {
               swipe={true}
               autoPlay={false}
               navButtonsAlwaysVisible={false}
+              fullHeightHover={false}
               NextIcon={
                 <img
                   src={theme === 'dark' ? DarkRightArrow : LightRightArrow}
@@ -64,13 +59,7 @@ const SoftSkillsSection = () => {
               }
             >
               {skills.map((skill) => (
-                <SoftSkillsCards
-                  key={skill.alt}
-                  title={skill.title}
-                  description={skill.description}
-                  image={skill.image}
-                  alt={skill.alt}
-                />
+                <SoftSkillsCards key={skill.alt} {...skill} />
               ))}
             </Carousel>
           </div>

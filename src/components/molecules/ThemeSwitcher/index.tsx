@@ -26,8 +26,10 @@ const ThemeSwitcher = () => {
   const classes = useStyles();
   const changeTheme = () => {
     if (theme === 'light') {
+      document.body.className = 'dark';
       setTheme('dark');
     } else {
+      document.body.className = 'light';
       setTheme('light');
     }
   };
