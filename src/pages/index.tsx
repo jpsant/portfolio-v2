@@ -7,7 +7,8 @@ import LoadingSpinner from '~atoms/LoadingSpinner';
 import HomeSection from '~templates/sections/Home';
 import AboutSection from '~templates/sections/About';
 import SoftSkillsSection from '~templates/sections/SoftSkills';
-import HardSkills from '~templates/sections/HardSkills';
+import HardSkillsSection from '~templates/sections/HardSkills';
+import ProjectsSection from '~templates/sections/Projects';
 
 const App = () => {
   const { ready } = useTranslation('SoonTemplate');
@@ -26,7 +27,8 @@ const App = () => {
               <HomeSection />
               <AboutSection />
               <SoftSkillsSection />
-              <HardSkills />
+              <HardSkillsSection />
+              <ProjectsSection />
             </section>
           ) : (
             <LoadingSpinner loading={ready} />
