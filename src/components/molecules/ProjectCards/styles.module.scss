@@ -149,9 +149,3 @@
     }
   }
 }
-
-.MuiButtonBase-root .MuiIconButton-root .Carousel-button-20 .Carousel-buttonVisible-18 {
-  @include respond-to('tablet') {
-    left: 10px !important;
-  }
-}
