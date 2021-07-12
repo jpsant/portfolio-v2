@@ -9,6 +9,7 @@ import AboutSection from '~templates/sections/About';
 import SoftSkillsSection from '~templates/sections/SoftSkills';
 import HardSkillsSection from '~templates/sections/HardSkills';
 import ProjectsSection from '~templates/sections/Projects';
+import ContactSection from '~templates/sections/Contact';
 
 const App = () => {
   const { ready } = useTranslation('SoonTemplate');
@@ -29,6 +30,7 @@ const App = () => {
               <SoftSkillsSection />
               <HardSkillsSection />
               <ProjectsSection />
+              <ContactSection />
             </section>
           ) : (
             <LoadingSpinner loading={ready} />
