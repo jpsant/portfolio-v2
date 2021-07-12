@@ -60,7 +60,7 @@ const HardSkillsSection = () => {
             <Carousel
               animation="slide"
               autoPlay={false}
-              navButtonsAlwaysVisible={true}
+              navButtonsAlwaysVisible={false}
               fullHeightHover={false}
               NextIcon={
                 <img

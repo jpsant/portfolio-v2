@@ -1,7 +1,8 @@
 @import "../../../../foundations/mixins.scss";
 
 .projectsSection {
-  height: 100vh;
+  // height: 100vh;
+  height: auto;
 
   &__container {
     display: flex;
