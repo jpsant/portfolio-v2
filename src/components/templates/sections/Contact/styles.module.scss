@@ -1,4 +1,80 @@
+@import "../../../../foundations/mixins.scss";
+
 .contactSection {
-  height: 100vh;
-  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-variation);
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+
+    h1 {
+      font-size: var(--font-size-1);
+      font-weight: 500;
+      font-family: var(--heading);
+      margin-right: 32px;
+      text-align: center;
+
+      @include respond-to('tablet') {
+        width: auto;
+        font-size: var(--font-size-2);
+        text-align: center;
+      }
+    }
+  }
+
+  &__formContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 644px;
+    min-height: 502px;
+    border-radius: 10px;
+    background-color: var(--bg);
+    margin-bottom: 32px;
+
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 654px;
+      border-radius: 10px 0 0 10px;
+      background-color: var(--bg);
+    }
+
+    &__form {
+      padding: 40px 35px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 0 10px 10px 0;
+
+      &_submitButton {
+        border-radius: 5px;
+        padding: 13px 36px;
+        background-color: transparent;
+        border: 1px solid var(--effect);
+        transition: all 0.3s;
+        cursor: pointer;
+        font-family: var(--heading);
+        font-size: calc(var(--font-size-4) - 2px);
+        font-weight: 500;
+        color: var(--effect);
+      }
+
+      &_submitButton:hover {
+        background-color: var(--effect);
+        color: #fff;
+      }
+    }
+  }
 }
