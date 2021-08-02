@@ -34,7 +34,7 @@ const AboutSection = () => {
             <Carousel
               swipe={true}
               autoPlay={false}
-              navButtonsAlwaysVisible={false}
+              navButtonsAlwaysVisible={true}
               onChange={(index) => setCurrentImage(index)}
               NextIcon={
                 <img

@@ -47,6 +47,7 @@
       &_image {
         width: 450px;
         padding: 0 32px;
+        min-height: 340px;
 
         @include respond-to('mobile') {
           width: 250px;
