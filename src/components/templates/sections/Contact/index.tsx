@@ -1,13 +1,17 @@
 import { useTranslation } from 'react-i18next';
+import { useContext } from 'react';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import Container from '@material-ui/core/Container';
 import { useForm } from 'react-hook-form';
 import Grid from '@material-ui/core/Grid';
 
 // eslint-disable-next-line css-modules/no-unused-class
 import styles from './styles.module.scss';
+import { ThemeContext } from '~contexts/themeContext';
 
 import textBubble from '~assets/3D-assets/text-bubble.png';
-import logo from '~assets/3D-assets/logo-2.png';
+import darkLogo from '~assets/3D-assets/logo-2.png';
+import lightLogo from '~assets/3D-assets/logo-3.png';
 
 import TextInput from '~atoms/TextInput';
 import EmailInput from '~atoms/EmailInput';
@@ -16,6 +20,7 @@ import TextareaInput from '~atoms/TextArea';
 
 const ContactSection = () => {
   const { t } = useTranslation('ContactSection');
+  const { theme } = useContext(ThemeContext);
   const { register, handleSubmit, errors } = useForm({
     defaultValues: {
       firstName: '',
@@ -37,7 +42,16 @@ const ContactSection = () => {
         </div>
         <div className={styles.contactSection__formContainer}>
           <div className={styles.contactSection__formContainer__image}>
-            <img src={logo} alt="portfolio-logo" />
+            {/* <img src={darkLogo} alt="portfolio-logo" /> */}
+            <SwitchTransition>
+              <CSSTransition key={theme === 'dark' ? 0 : 1} timeout={400} classNames="fade">
+                {theme === 'dark' ? (
+                  <img src={darkLogo} alt="3D dark Logo" />
+                ) : (
+                  <img src={lightLogo} alt="3D light Logo" />
+                )}
+              </CSSTransition>
+            </SwitchTransition>
           </div>
           <form
             onSubmit={handleSubmit(onSubmit, onError)}

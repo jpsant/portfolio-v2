@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-variation);
+  // background-color: var(--bg-variation);
 
   &__title {
     display: flex;
@@ -35,9 +35,9 @@
     align-items: center;
     justify-content: center;
     min-width: 644px;
-    min-height: 502px;
+    min-height: 652px;
+    height: auto;
     border-radius: 10px;
-    background-color: var(--bg);
     margin-bottom: 32px;
 
     &__image {
@@ -45,9 +45,8 @@
       align-items: center;
       justify-content: center;
       width: 50%;
-      height: 654px;
+      height: 100%;
       border-radius: 10px 0 0 10px;
-      background-color: var(--bg);
     }
 
     &__form {
